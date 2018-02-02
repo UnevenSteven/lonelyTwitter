@@ -1,3 +1,16 @@
+
+
+/* LonelyTwitterActivity
+ *
+ * Version 1
+ * Feb 1, 2018
+ * Copyright (c) 2018 Team 24. CMPUT301. University of Alberta - All RIghts Reserved.
+ *   You may use, distribute or modify this code under terms and conditions of Code of Student Behaviour at
+ *   University ofAlberta.
+ *   You can find a copy of the license in this project. Otherwise, please contact ssan@ualberta.ca
+ * /
+ */
+
 package ca.ualberta.cs.lonelytwitter;
 
 import java.io.BufferedReader;
@@ -25,6 +38,11 @@ import android.widget.Toast;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
+
+/**
+ * @author steven
+ * @version 1
+ */
 
 public class LonelyTwitterActivity extends Activity {
 
@@ -96,6 +114,11 @@ public class LonelyTwitterActivity extends Activity {
 
 	}
 
+	/**
+	 * saves tweet records
+	 * @throws FileNotFoundException file error
+	 * @throws IOException IO error
+	 */
 	private void loadFromFile() {
 		try {
 			FileInputStream fis = openFileInput(FILENAME);
